@@ -24,7 +24,6 @@ header {
     justify-content: space-evenly;
     animation: fadeInLeftBig;
     animation-duration: 1s;
-    /* background: linear-gradient(#7F00FF, #E100FF); */
 
     /* background: linear-gradient(180deg, #B3EFFF 0%, #4cb9eb 100%);  */
     /* 
@@ -397,6 +396,7 @@ header a:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: -5px;
 }
 
 .main-header img {
