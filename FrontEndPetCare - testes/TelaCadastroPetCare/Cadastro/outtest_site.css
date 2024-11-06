@@ -1,12 +1,12 @@
 body {
-/* 
-    background: linear-gradient(180deg, #B3EFFF 0%, #4cb9eb 100%); */
+    /* background: linear-gradient(180deg, #B3EFFF 0%, #4cb9eb 100%); */
     background-image: url(../gradient_1920_1080\ \(2\).png);
     background-size: cover;
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     cursor: url('cursor\ normal.png'), auto;
     animation: fadeInLeftBig 1.4s ease-in-out;
     overflow-x: hidden;
@@ -15,31 +15,12 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    margin: 95px auto;
-    margin-left: 0%;
-    width: 100%;
-    padding: 5px 0px 0px;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
 }
 
-
-h1 {
-    margin-left: 32%;
-    font-size: 25px;
-}
-
-h4 {
-    font-size: 13px;
-}
-
-.gato {
-    margin-top: -25%;
-    height: 400px;
-    margin-left: -13%;
-}
 .painel {
-
-    margin-top: -11%;
     background-color: #fff;
     border-radius: 20px;
     border-top: 1px solid #dadde1;
@@ -47,37 +28,34 @@ h4 {
     padding: 16px;
     position: relative;
     width: 432px;
-    
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-@keyframes fadeInLeftBig {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+h1 {
+    font-size: 25px;
 }
 
+h4 {
+    font-size: 13px;
+}
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 150px;
-    margin-bottom: 140px;
+    height: 90px;
+    margin-bottom: 40px;
+}
 
+header a span {
+    color: rgb(163, 84, 236);
 }
 
 header img {
-    height: 250px;
-    /* margin-top: -50px; */
-    /* filter: drop-shadow(0 8px 20px rgba(46, 45, 45, 0.5)); */
-    /* margin-right: -10px; */
+    height: 200px;
 }
 
 header a {
@@ -85,19 +63,7 @@ header a {
     color: #fff;
     font-size: 15px;
     font-weight: 800;
-    border-bottom: 2px solid rgb(163, 84, 236);
     cursor: url('cursor\ pointer.png'), auto !important;
-    /* filter: drop-shadow(0px 0px 10px rgba(6, 69, 105, 0.5)); */
-
-}
-
-header a span {
-    color: rgb(163, 84, 236);
-}
-
-header a span:hover {
-    color: #fff;
-
 }
 
 header a:hover {
@@ -118,33 +84,16 @@ header a:hover {
     margin-left: 25%;
 }
 
-/* footer {
-  
+footer {
     background-image: url(../gradient_1920_1080\ \(2\).png);
     background-size: cover;
-    width: 96%;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    margin-top: -5%;
-    filter: drop-shadow(0 8px 20px rgba(8, 99, 91, 0.5));
-} */
-footer {
-    /* background: linear-gradient(180deg, #B3EFFF 0%, #4cb9eb 100%);  */
-
-    background-image: url(../assets/gradient_1920_1080\ \(2\).png);
-    background-size: cover;
-
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    filter: drop-shadow(0 8px 20px rgba(8, 99, 91, 0.5));
+    /* filter: drop-shadow(0 8px 20px rgba(8, 99, 91, 0.5)); */
     margin-top: 20px;
-
-
 }
 
 .icone {
@@ -192,7 +141,6 @@ footer {
     background-color: dodgerblue;
 }
 
-
 .email,
 .senha,
 .confirmar {
@@ -205,7 +153,7 @@ footer {
     padding: 0px;
 }
 
-.nome, .sobrenome{
+.nome, .sobrenome {
     margin-left: 1px;
     border: 2px solid rgb(106, 245, 245);
     text-align: center;
@@ -216,13 +164,11 @@ footer {
     padding: 0px;
 }
 
-
-
 .dtnasc {
     font-size: 12px;
 }
 
-.dia, .mes, .ano{
+.dia, .mes, .ano {
     border: 2px solid rgb(106, 245, 245);
     text-align: center;
     border-radius: 15px;
@@ -230,10 +176,9 @@ footer {
     height: 40px;
     width: 130px;
     padding: 0px;
-
 }
 
-.conta{
+.conta {
     font-size: 14px;
     margin-left: 150px;
 }
@@ -244,5 +189,4 @@ footer {
 
 .confirmar_senha, .email_validar {
     font-size: 11px;
-
 }
