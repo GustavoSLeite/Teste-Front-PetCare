@@ -331,7 +331,7 @@ header a:hover {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    border-bottom: 2px solid rgb(106, 245, 245);
+    border-bottom: 2px solid rgb(163, 84, 236);
     margin-bottom: 50px;
     padding-bottom: 10px;
     background: linear-gradient(#7F00FF, #E100FF, #7F00FF);
@@ -383,9 +383,11 @@ header a:hover {
 
 .box3 li {
     font-size: 20px;
-    font-weight: bold;
-    color: #7F00FF;
+    /* font-weight: bold; */
+    /* color: #7F00FF; */
     margin-top: 15px;
+    list-style: none;
+   
 }
 
 .main-header {
