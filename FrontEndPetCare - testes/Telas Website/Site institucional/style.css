@@ -571,7 +571,8 @@ header a:hover {
 
 .passo1 h4 {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
+   
 }
 
 .passo1 p {
@@ -595,11 +596,13 @@ header a:hover {
     /* border: 3px solid rgb(106, 245, 245); */
     border: 3px solid rgb(163, 84, 236);
 
+
 }
 
 .passo2 h4 {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
+   
 }
 
 .passo2 p {
@@ -625,7 +628,8 @@ header a:hover {
 
 .passo3 h4 {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
+ 
 }
 
 .passo3 p {
@@ -647,13 +651,15 @@ header a:hover {
     font-weight: 400;
     /* border: 3px solid rgb(106, 245, 245); */
     border: 3px solid rgb(163, 84, 236);
+  
 }
 
 
 .passo4,
 .passo15 h4 {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
+    
 }
 
 
