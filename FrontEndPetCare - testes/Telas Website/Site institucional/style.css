@@ -681,44 +681,43 @@ header a:hover {
 }
 
 .card {
-    height: 70vh;
+    height: auto; /* Ajustado para auto para se ajustar ao conteúdo */
     min-width: 100vw;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    flex-direction: column; /* Alinha os card-containers verticalmente */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px 0; /* Espaçamento vertical */
 }
-
 
 .card-container {
     width: 80vw;
-    height: 60%;
+    height: 300px; /* Definido um valor fixo para altura */
     background-image: url(../assets/PetcareBackground.png);
-    /* background-image: url(../assets/gradient_1920_1080\ \(2\).png); */
     background-size: cover;
     display: flex;
+    flex-direction: column; /* Alinha os conteúdos dos cards verticalmente */
+    justify-content: center;
+    align-items: center; /* Certifica-se de que o conteúdo esteja centralizado */
     border-radius: 20px;
-    align-items: center;
-    margin-right: 50px;
-    margin-left: 60px;
-
     padding: 30px;
     text-align: center;
-
-
+    margin: 10px 0; /* Margem entre os cards */
 }
 
+.card-container.with-img {
+    flex-direction: row; /* Alinha os conteúdos dos cards horizontalmente */
+    justify-content: center; /* Centraliza a imagem e o texto */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
 
 .card img {
     height: 250px;
     width: 250px;
     border-radius: 30px;
     margin: 20px;
-
-
-
 }
 
 .card-texto p {
@@ -726,6 +725,7 @@ header a:hover {
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
+    margin-left: 20px; /* Adiciona margem à esquerda do texto para separar da imagem */
 }
 
 .card-texto span {
@@ -735,9 +735,10 @@ header a:hover {
     color: transparent;
 }
 
-section .card .section2 {
+
+/* section .card .section2 {
     height: 70vh;
-}
+} */
 
 
 
