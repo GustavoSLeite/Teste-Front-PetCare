@@ -20,6 +20,7 @@ body {
     margin: 95px auto;
     margin-left: 0%;
     width: 100%;
+    height: 90vh;
    
 }
 
@@ -41,7 +42,7 @@ div img {
     flex-direction: column;
     width: 450px;
     height: 550px;
-    margin-top: -10%;
+    /* margin-top: -10%; */
     background-color: #fff;
     border-top: 1px solid #dadde1;
     box-sizing: border-box;
@@ -63,17 +64,22 @@ header {
     height: 90px;
     margin-bottom: 40px;
 
+    
 }
+
 header a span {
     color: rgb(163, 84, 236);
 }
+header  img {
+    height: 200px; 
+    margin-top: 18px;
 
-header img {
-    height: 300px;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     /* filter: drop-shadow(0 8px 20px rgba(46, 45, 45, 0.5)); */
-    margin-right: -10px;
+    /* margin-right: -10px;
+    */
 }
+
 
 header a {
     text-decoration: none;
@@ -81,19 +87,12 @@ header a {
     font-size: 15px;
     font-weight: 800;
     /* border-bottom: 2px solid rgb(163, 84, 236); */
-    cursor: url('cursor\ pointer.png'), auto !important;
-    /* filter: drop-shadow(0px 0px 10px rgba(6, 69, 105, 0.5)); */
-
+    cursor: url('cursor\ pointer.png'), auto !important; 
+    /* filter: drop-shadow(0px 0px 10px rgba(6, 69, 105, 0.5));
+     */
 }
 
-header a span {
-    color: rgb(163, 84, 236);
-}
 
-header a span:hover {
-    color: #fff;
-
-}
 
 header a:hover {
     font-size: 20px;
@@ -132,16 +131,15 @@ header a:hover {
 }
 
 footer {
-    background: linear-gradient(180deg, #4cb9eb 0%, #8bd6eb 100%);
-    width: 95.5%;
+    /* background: linear-gradient(180deg, #4cb9eb 0%, #8bd6eb 100%); */
+    width: 95.3%;
     height: 50px;
     display: flex;
     justify-content: space-around;
     padding: 30px;
-    margin-top: -5%;
+    margin-top: -100px;
     filter: drop-shadow(0 8px 20px rgba(8, 99, 91, 0.5));
 }
-
 .icone {
     display: flex;
     align-items: center;
@@ -237,3 +235,8 @@ div {
     font-size: 18px;
     font-weight: bold;
 }
+
+
+
+
+ 
