@@ -915,8 +915,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    filter: drop-shadow(0 8px 20px rgba(8, 99, 91, 0.5));
-    margin-top: 20px;
+    /* filter: drop-shadow(0 8px 20px rgba(8, 99, 91, 0.5)); */
+    margin-top: 150px;
 
 
 }
