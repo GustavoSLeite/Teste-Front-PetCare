@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare - Soluções IoT para Transporte de Animais</title>
+  <style>
+    /* Estilos gerais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #7f00ff;
+      color: white;
+      padding: 3em 0;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 4em;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.8em;
+      line-height: 1.5;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    /* Banner */
+    .banner {
+      background-color: rgba(106, 245, 245, 0.6);
+      color: #333;
+      padding: 2em;
+      text-align: center;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+    .banner h2 {
+      font-size: 3em;
+      font-weight: 600;
+      margin-bottom: 1em;
+    }
+    .banner p {
+      font-size: 1.5em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    /* Seções */
+    .section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4em;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .section h2 {
+      color: #7f00ff;
+      font-size: 3em;
+      margin-bottom: 1em;
+      font-weight: 700;
+    }
+    .section p {
+      font-size: 1.3em;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.7em;
+    }
+
+    /* Missão, Visão e Valores */
+    .mission-vision-values {
+      display: flex;
+      gap: 2em;
+      margin-top: 3em;
+      justify-content: space-between;
+    }
+    .mission-vision-values div {
+      flex: 1;
+      background-color: rgba(106, 245, 245, 0.2);
+      padding: 2em;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .mission-vision-values h3 {
+      font-size: 2em;
+      color: #7f00ff;
+      margin-bottom: 1em;
+      font-weight: 600;
+    }
+    .mission-vision-values p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    /* Serviços */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2em;
+      margin-top: 3em;
+    }
+    .services div {
+      background-color: white;
+      padding: 2.5em;
+      border-radius: 15px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      width: calc(33% - 2em);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .services div:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    }
+    .services img, .services i {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1em;
+    }
+    .services h3 {
+      color: #7f00ff;
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    .services p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2em;
+      font-size: 1.2em;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .services div {
+        width: 100%;
+      }
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      .banner h2 {
+        font-size: 2em;
+      }
+      .banner p {
+        font-size: 1.2em;
+      }
+      .mission-vision-values {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>PetCare</h1>
+    <p>Soluções IoT para Transporte de Animais</p>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Bem-vindo à PetCare</h2>
+    <p>Inovação e segurança no transporte de animais com soluções IoT integradas.</p>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section class="section" id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A PetCare é uma empresa criada por 6 entusiastas de tecnologia e inovação, focada em soluções IoT para o setor de pets. Desenvolvemos sistemas de monitoramento para transporte de animais, assegurando conforto e segurança.</p>
+  </section>
+
+  <!-- Missão, Visão e Valores -->
+  <section class="section" id="missao-visao-valores">
+    <h2>Missão, Visão e Valores</h2>
+    <div class="mission-vision-values">
+      <div>
+        <h3>Missão</h3>
+        <p>Prover tecnologia que garanta a segurança e o bem-estar dos animais em transporte. Nosso objetivo é garantir que cada animal transportado seja monitorado de perto, proporcionando conforto e segurança.</p>
+      </div>
+      <div>
+        <h3>Visão</h3>
+        <p>Ser referência no setor de monitoramento para transporte de animais de estimação, expandindo nosso alcance para todo o Brasil e além, oferecendo soluções inovadoras e de confiança para os nossos clientes.</p>
+      </div>
+      <div>
+        <h3>Valores</h3>
+        <p>Inovação, respeito aos animais e compromisso com o cliente. Estamos sempre em busca de novas soluções tecnológicas para melhorar a segurança e o bem-estar dos animais, mantendo um relacionamento transparente e de confiança com nossos parceiros.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Serviços -->
+  <section class="section services" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div>
+      <img src="https://img.icons8.com/ios/452/thermometer.png" alt="Temperatura">
+      <h3>Monitoramento de Temperatura</h3>
+      <p>Sistema de monitoramento de temperatura em tempo real para transporte seguro dos pets, garantindo conforto durante toda a viagem.</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios/452/sensor.png" alt="Sensor de Presença">
+      <h3>Sensor de Presença</h3>
+      <p>Sensor de presença para garantir que os animais estejam seguros e bem acomodados dentro da van, com dados acessíveis a qualquer momento.</p>
+    </div>
+    <div>
+      <i class="fas fa-tachometer-alt" style="font-size: 80px; color: #7f00ff;"></i>
+      <h3>Dashboard Intuitivo</h3>
+      <p>Plataforma de fácil visualização para que os clientes monitorem as condições das
