@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+aside {
+    background-image: url(../assets/gradient_1920_1080\ \(2\).png);
+    background-size: cover; 
+     /* background: linear-gradient(#7F00FF, #E100FF); */
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+aside img {
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+aside h2{
+    font-size: 25px;
+    
+}
+
+.container {
+    height: 100vh;
+    width: calc(100vw - 200px); /* Ajusta para a largura do aside */
+    margin-left: 200px; /* Compensa a largura do aside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para uma nova linha, se necessário */
+     /* background-image: url(../assets/gradient_1920_1080\ \(2\).png);
+    background-size: cover;  */
+}
+
+.container img {
+    height: 250px;
+}
+
+.container div {
+    height: 400px;
+    width: 400px;
+     /* border: 3px solid rgb(106, 245, 245);   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 10px; /* Adiciona margem para espaçamento */
+    background-image: url(../assets/gradient_1920_1080\ \(2\).png);
+    background-size: cover; 
+  
+  
+}
+
+.container h3{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+
+}
