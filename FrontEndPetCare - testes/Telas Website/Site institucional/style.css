@@ -393,16 +393,16 @@ header a:hover {
 
 }
 
-
 .integrantes {
-    min-width: 100vw;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
+    justify-content: center;
+    background: #f7f9fc;
     font-family: "Poppins", sans-serif;
-
+    padding: 40px 20px;
 }
 
 .integrantes h3 {
@@ -431,18 +431,22 @@ header a:hover {
 
 .row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .group {
-    display: inline-block;
-
-    width: 30%;
-    margin: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    max-width: 300px;
     text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
 }
-
 .group img {
     height: 150px;
     border-radius: 50%;
@@ -641,9 +645,6 @@ header a:hover {
 }
 
 
-/* section .card .section2 {
-    height: 70vh;
-} */
 
 
 
