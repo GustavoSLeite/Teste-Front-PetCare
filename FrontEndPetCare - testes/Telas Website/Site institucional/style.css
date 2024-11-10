@@ -94,10 +94,12 @@ header a:hover {
     align-items: center;
     animation: fadeInRightBig;
     animation-duration: 1s;
-    background: linear-gradient(#7F00FF, #E100FF);  
+    /* background: linear-gradient(#7F00FF, #E100FF);   */
  
     /* background-image: url(../assets//vecteezy_cute-little-dog-in-pet-carrier-with_24769404.jpg);
     background-size: cover; */
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
     height: 80vh;
     min-width: 100vw;
     position: relative;
