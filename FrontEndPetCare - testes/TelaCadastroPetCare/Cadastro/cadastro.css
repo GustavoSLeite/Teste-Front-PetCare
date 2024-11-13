@@ -1,16 +1,57 @@
-body {
-    
-  
+body{
+    font-size: 2px 200px !important;
+    /* background: linear-gradient(180deg, #B3EFFF 0%, #4cb9eb 100%); */
+    /* background-image: url(../background1.png); */
     background-image: url(../gradient_1920_1080\ \(2\).png);
     background-size: cover;
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     height: 100%;
+    width: 100%;
     cursor: url('cursor\ normal.png'), auto;
     animation: fadeInLeftBig 1.4s ease-in-out;
+   
 }
 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90px;
+    margin-bottom: 40px;
+
+    
+}
+
+header a span {
+    color: rgb(163, 84, 236);
+}
+header  img {
+    height: 200px; 
+
+}
+
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    /* border-bottom: 2px solid rgb(163, 84, 236); */
+    cursor: url('cursor\ pointer.png'), auto !important; 
+    /* filter: drop-shadow(0px 0px 10px rgba(6, 69, 105, 0.5));
+     */
+}
+
+
+
+header a:hover {
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    color: rgb(163, 84, 236);
+}
 
 
 .container {
@@ -37,19 +78,20 @@ h4 {
 div img {
     margin-top: -25%;
 }
+
+
 .painel {
     display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 550px;
-    /* margin-top: -10%; */
+    width: 500px; /* Aumentando a largura */
+    height: 650px; /* Aumentando a altura */
     background-color: #fff;
     border-top: 1px solid #dadde1;
     box-sizing: border-box;
-    padding: 16px;
+    padding: 20px; /* Aumentando o padding */
     position: relative;
     color: rgb(163, 84, 236);
-    border: 1px solid #A354EC; 
+    border: 1px solid #A354EC;
     box-shadow: 0 0 10px #A354EC !important;
     border-radius: 30px;
 }
@@ -57,48 +99,9 @@ div img {
 
 
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 90px;
-    margin-bottom: 40px;
-
-    
-}
-
-header a span {
-    color: rgb(163, 84, 236);
-}
-header  img {
-    height: 200px; 
-    margin-top: 18px;
-
-    /* margin-top: -50px; */
-    /* filter: drop-shadow(0 8px 20px rgba(46, 45, 45, 0.5)); */
-    /* margin-right: -10px;
-    */
-}
-
-
-header a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 800;
-    /* border-bottom: 2px solid rgb(163, 84, 236); */
-    cursor: url('cursor\ pointer.png'), auto !important; 
-    /* filter: drop-shadow(0px 0px 10px rgba(6, 69, 105, 0.5));
-     */
-}
 
 
 
-header a:hover {
-    font-size: 20px;
-    transition: all 0.5s ease-in-out;
-    color: rgb(163, 84, 236);
-}
 
 .botao {
     cursor: pointer;
@@ -113,6 +116,7 @@ header a:hover {
     width: 140px;
     margin-top: -16px;
     margin-right: 100px;
+    margin: auto;
 }
 .cadastro_link {
    

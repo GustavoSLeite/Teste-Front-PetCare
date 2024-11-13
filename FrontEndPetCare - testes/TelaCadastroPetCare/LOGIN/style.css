@@ -68,16 +68,26 @@ body{
     }
     
 
-.login{
+/* .login{
 
     height: 80vh;
     display: flex; 
     justify-content: center;
     align-items: center;
     gap: 20px;
+} */
+
+.login {
+    height: 80vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 100px; /* Ajuste este valor conforme necessário */
 }
 
- .container{
+
+ /* .container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +95,17 @@ body{
     width: 100%;
     margin-top: 100px;
  
- }
+ } */
+
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 150px; /* Experimente aumentar para dar mais espaço */
+}
+
 
  .card{
     height: 450px;
